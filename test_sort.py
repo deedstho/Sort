@@ -3,22 +3,6 @@ import sort
 
 class TestCaseInsertionSort(unittest.TestCase):
 
-    def test_insert(self):
-        test_list = [1,3,4,2]
-        correct_list = [1,2,3,4]
-        destination_index = 1
-        source_index = 3
-        sort.insert(test_list, destination_index, source_index)
-        self.assertEqual(test_list, correct_list)
-
-    def test_insert2(self):
-        test_list2 = [1,3,4,2,7]
-        correct_list2 = [1,2,3,4,7]
-        destination_index2 = 1
-        source_index2 = 3
-        sort.insert(test_list2, destination_index2, source_index2)
-        self.assertEqual(test_list2, correct_list2)
-
     def test_insertion_sort(self):
         sortable = [1,3,5,2,4]
         sorted_list = [1,2,3,4,5]
